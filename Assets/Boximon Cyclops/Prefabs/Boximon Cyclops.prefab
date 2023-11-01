@@ -669,6 +669,9 @@ GameObject:
   - component: {fileID: 4255938595546462}
   - component: {fileID: 137937364085243502}
   - component: {fileID: 3046010476182221105}
+  - component: {fileID: 6234447908712959438}
+  - component: {fileID: 7918188859768849558}
+  - component: {fileID: 9077165798517879335}
   m_Layer: 0
   m_Name: Boximon Cyclopes
   m_TagString: Untagged
@@ -684,7 +687,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1582130282261294}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: -0.00000006397558}
+  m_LocalPosition: {x: -0, y: 0, z: 0.03}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -782,6 +785,65 @@ MonoBehaviour:
   destroyCollectibles: 0
   pushPower: 2
   collisionAudio: {fileID: 0}
+--- !u!65 &6234447908712959438
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582130282261294}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7918188859768849558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582130282261294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53942fa2b8b746e2bfae7230b9740c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  anim: {fileID: 0}
+  runningSound: {fileID: 0}
+  playerOneControls: 1
+  playerTwoControls: 1
+  runningSpeed: 4
+  gravity: 8
+  freeRotation: 1
+  freeRotationSpeed: 200
+  running: 0
+  moveDir: {x: 0, y: 0, z: 0}
+--- !u!114 &9077165798517879335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1582130282261294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b53942fa2b8b746e2bfae7230b9740c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 0}
+  anim: {fileID: 0}
+  runningSound: {fileID: 0}
+  playerOneControls: 1
+  playerTwoControls: 0
+  runningSpeed: 4
+  gravity: 8
+  freeRotation: 1
+  freeRotationSpeed: 90
+  running: 0
+  moveDir: {x: 0, y: 0, z: 0}
 --- !u!1 &1630493012256686
 GameObject:
   m_ObjectHideFlags: 0
